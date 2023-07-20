@@ -31,6 +31,7 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeals = () => {
+  
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState();

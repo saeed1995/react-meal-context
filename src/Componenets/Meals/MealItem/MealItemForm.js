@@ -29,7 +29,7 @@ const MealItemForm = (props) => {
     <form className={classes.form} onSubmit={submitHandler}>
       <Input
         ref={amountInputRef}
-        label='Amount'
+        label='تعداد'
         input={{
           id: 'amount_' + props.id,
           type: 'number',
@@ -39,8 +39,8 @@ const MealItemForm = (props) => {
           defaultValue: '1',
         }}
       />
-      <button>+ Add</button>
-      {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      <button>+ افزودن</button>
+      {!amountIsValid && <p>لطفا یک عدد بین ۱ تا 5 انتخاب نمایید.</p>}
     </form>
   );
 };

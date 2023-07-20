@@ -61,23 +61,23 @@ const Cart = (props) => {
   const modalAction = (
     <div className={classes.actions}>
       <button className={classes["button--alt"]} onClick={props.onClose}>
-        Close
+        بستن
       </button>
       {hasItems && (
         <button className={classes.button} onClick={orderHandler}>
-          Order
+          سفارش
         </button>
       )}
     </div>
   );
-  const isSubmittingModalContent = <p>sending order date </p>;
+  const isSubmittingModalContent = <p>درحال ارسال </p>;
   const didSubmitModalContent = (
     <React.Fragment>
-      <p>Successfully send order ! </p>
+      <p>سفارش با موفقیت ثبت شد ! </p>
 
       <div className={classes.actions}>
         <button className={classes.button} onClick={props.onClose}>
-          Close
+          بستن
         </button>
       </div>
     </React.Fragment>
@@ -86,7 +86,7 @@ const Cart = (props) => {
     <React.Fragment>
       {cartItems}
       <div className={classes.total}>
-        <span>Total Amount</span>
+        <span>تعداد کل</span>
         <span>{totalAmount}</span>
       </div>
       {isCheckout && (
